@@ -39,6 +39,7 @@ h6 {
 
 a {
     text-decoration: none !important;
+    text-decoration-line: none !important;
 }
 
 ul {
@@ -67,6 +68,14 @@ img {
 
 .text_white {
     color: #fff;
+}
+
+.text_black {
+    color: #000000;
+}
+
+.text_yellow {
+    color: #F4D169;
 }
 
 .bg_gray {
@@ -294,6 +303,10 @@ header {
     }
 
     // Swiper
+    .fv_swiper {
+        overflow: hidden
+    }
+
     .swiper-wrapper {
         transition-timing-function: linear;
     }
@@ -880,7 +893,7 @@ header {
     .case {
         background: url(../img/fv_bottom_bg.png) no-repeat 10% 20% / 368px;
         padding: 100px 0 70px;
-        
+
 
         @media(max-width: 767px) {
             background: url(../img/fv_bottom_bg.png) no-repeat right 6% / 293px;
@@ -896,15 +909,19 @@ header {
             padding: 30px;
             border-radius: 32px;
         }
+
         .case_swipe_catch {
             font-size: clamp(19px, 1.65vw, 28px);
         }
+
         .case_swipe_txt {
             font-size: 21px;
+
             @media(max-width: 767px) {
                 font-size: 19px;
             }
         }
+
         .case_swipe_txt.light_icon::before {
             content: "";
             display: inline-block;
@@ -915,8 +932,329 @@ header {
             margin-right: 3px;
             transform: translateY(5px);
         }
+
+        // Swiper
+        .swiper-area {
+            position: relative;
+        }
+
+        .case_swiper {
+            width: 100%;
+        }
+
+        .swiper-button-next {
+            right: var(--swiper-navigation-sides-offset, -40px);
+        }
+
+        .swiper-button-prev {
+            left: var(--swiper-navigation-sides-offset, -40px);
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            height: 38px;
+            width: 38px;
+        }
+
+        /* 前へ次への矢印カスタマイズ */
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: "";
+            height: 38px;
+            margin: auto;
+            width: 38px;
+        }
+
+        /* 前への矢印カスタマイズ */
+        .swiper-button-prev::after {
+            background-image: url(../img/back.png);
+        }
+
+        /* 次への矢印カスタマイズ */
+        .swiper-button-next::after {
+            background-image: url(../img/next.png);
+        }
+    }
+
+    .solution {
+        .solution_ttl_txt {
+            font-size: clamp(24px, 2.36vw, 40px);
+        }
+
+        .solution_catch {
+            font-size: clamp(21px, 1.65vw, 28px);
+        }
+
+        .solution_txt {
+            font: size 20px;
+
+            @media(max-width: 767px) {
+                font-size: 15px;
+            }
+        }
+
+        .solution_1,
+        .solution_2,
+        .solution_3 {
+            box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
+            padding: 30px 30px 30px 0;
+            border-radius: 32px;
+
+            @media(max-width: 767px) {
+                padding: 25px 0;
+            }
+        }
+
+        .solution_inner {
+            @media(max-width: 767px) {
+                padding: 0 25px;
+            }
+        }
+
+        img {
+            width: 40%;
+
+            @media(max-width: 767px) {
+                width: 100%;
+            }
+        }
+
+        .solution_txt_2 {
+            padding: 5px 10px 5px 50px;
+            white-space: nowrap;
+            font-size: 21px;
+
+            @media(max-width: 767px) {
+                padding: 3px 10px 3px 15px;
+                font-size: 19px;
+            }
+        }
+
+        .solution_button {
+            border-radius: 6px;
+            background-color: #707070;
+            padding: 14px;
+            width: 25%;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+            bottom: 0;
+
+            @media(max-width: 767px) {
+                width: 80%;
+            }
+        }
     }
 }
+
+/*-------------------
+	資料ダウンロード
+-------------------*/
+.take_free {
+    margin-top: 150px;
+
+    @media(max-width: 767px) {
+        margin-top: 100px;
+    }
+
+    .bg_blue {
+        border-radius: 33px;
+        margin: 0 auto;
+        width: 90%;
+        padding: 50px 0;
+
+        @media(max-width: 767px) {
+            border-radius: 27px;
+            padding: 20px;
+        }
+    }
+
+    .left {
+        margin-right: 7%;
+    }
+
+    .take_free_ttl {
+        font-size: clamp(24px, 2.48vw, 42px);
+    }
+
+    img {
+        width: 30%;
+    }
+
+    .take_free_button {
+        background-color: #F4D169;
+        border-radius: 5px;
+        padding: 20px 10px;
+        display: block;
+        text-align: center;
+        width: 60%;
+        font-size: 22px;
+
+        @media(max-width: 767px) {
+            padding: 20px;
+            width: 100%;
+            font-size: 17px;
+        }
+    }
+}
+
+/*-------------------
+	CTA
+-------------------*/
+.cta {
+    .bg_lightblue {
+        padding: 80px 0;
+
+        @media(max-width: 767px) {
+            padding: 50px 0;
+        }
+    }
+
+    .cta_txt {
+        font-size: 22px;
+
+        @media(max-width: 767px) {
+            font-size: 18px;
+        }
+    }
+
+    img {
+        width: 23%;
+
+        @media(max-width: 767px) {
+            width: 40%;
+        }
+    }
+
+    .cta_btn1 {
+        background-color: #F4D169;
+    }
+
+    .cta_btn1,
+    .cta_btn2 {
+        font-size: 29px;
+        padding: 15px;
+        width: 33%;
+        border-radius: 5px;
+
+        @media(max-width: 767px) {
+            font-size: 19px;
+            padding: 15px;
+            width: 100%;
+        }
+    }
+
+    .bg-white {
+        width: 80%;
+        margin: 80px auto;
+        padding: 40px;
+        
+        @media(max-width: 767px) {
+            width: 90%;
+            margin: 40px auto 0;
+            padding: 25px;
+        }
+    }
+
+    .tel {
+        font-size: clamp(33px, 3.55vw, 60px);
+    }
+
+    .time {
+        @media(min-width: 768px) {
+            text-align: left;
+        }
+    }
+}
+
+/*-------------------
+	FAQ
+-------------------*/
+.faq {
+    margin-top: 150px;
+
+    @media(max-width: 767px) {
+        margin-top: 60px;
+    }
+
+    .faq_ttl_txt {
+        font-size: clamp(24px, 2.36vw, 40px);
+    }
+
+    .qa {
+        font-size: 17px;
+
+        @media(max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+
+    .poppins {
+        font-size: 22px;
+    }
+
+    // アコーディオン
+    .qa__block {
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+      }
+      
+      .qa__item {
+        display: inline-block;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.16);
+      }
+      
+      .qa__head {
+        position: relative;
+        text-align: left;
+        padding: 20px 0;
+        margin: 0 20px;
+        cursor: pointer;
+        width: 100%;
+        border: 0;
+      }
+      
+      .qa__body {
+        position: relative;
+        border: transparent; /*borderを非表示の状態にする*/ 
+        padding: 0 20px; /*上下のpaddingを0に書き換える*/
+        line-height: 0; /* 非表示時、0*/
+        opacity: 0; /* 非表示時、0*/
+        transition: line-height 0.4s, padding 0.4s, opacity 0.4s;
+      }
+
+      .qa__head:after {
+        content: "";
+        border-top: 1px solid #CCCCCC;
+        border-left: 1px solid #CCCCCC;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        transform: rotate(-135deg) translateY(9px);
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transition: transform .4s;
+      }
+
+      .qa__body.is-open {
+        padding: 20px 0;
+        margin: 0 20px;
+        line-height: 1.5;
+        opacity: 1;
+        border-top: 1px solid #CCCCCC;
+      }
+      
+      .qa__head.is-open::after {
+        transform: rotate(45deg) translateY(-10px);
+      }
+}
+
+
 
 
 
@@ -1036,11 +1374,11 @@ header {
     }
 
     .company h2 {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .company p {
-        font-size: 2.4rem;
+        font-size: 1.5rem;
     }
 
     .company h3 {

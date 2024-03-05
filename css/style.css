@@ -174,6 +174,7 @@ header .bg_gray {
 }
 header .bg-white {
   padding: 10px 20px;
+  box-shadow: 0 0 20px rgb(211, 211, 211);
 }
 @media (max-width: 767px) {
   header .bg-white {
@@ -219,6 +220,11 @@ header .cta_btn2 {
   border-radius: 8px;
   padding: 10px;
   font-size: 16px;
+}
+header .cta_btn1:hover,
+header .cta_btn2:hover {
+  transition: 0.3s;
+  transform: translateY(-4px);
 }
 header .drawer-hidden {
   display: none;
@@ -354,7 +360,8 @@ header .drawer-item_bottom {
   font-size: clamp(14px, 2.6vw, 23px);
 }
 .fv .fv_txt_3 {
-  font-size: clamp(30px, 2.6vw, 44px);
+  font-size: clamp(33px, 2.6vw, 44px);
+  margin-top: -1%;
 }
 @media (max-width: 767px) {
   .fv .fv_txt_3 {
@@ -392,22 +399,30 @@ header .drawer-item_bottom {
 .fv .fv_cta_pc {
   width: 69%;
   min-width: 350px;
-  margin-top: 5vh;
+  margin-top: 2vh;
 }
 .fv .fv_cta_sp {
   margin-top: 20px;
 }
+.fv .fv_cta_pc:hover,
+.fv .fv_cta_sp:hover {
+  transition: 0.3s;
+  transform: translateY(-4px);
+}
 .fv .fv_cta_txt {
   width: 69%;
+  display: block;
+  color: #000;
   margin-top: 15px;
-  -webkit-text-decoration: underline solid #000000;
-          text-decoration: underline solid #000000;
   font-size: 14px;
 }
 @media (max-width: 767px) {
   .fv .fv_cta_txt {
     width: 100%;
   }
+}
+.fv .fv_cta_txt_span {
+  border-bottom: 1.5px solid #000;
 }
 .fv .fv_banner_pc {
   width: 40%;
@@ -417,6 +432,9 @@ header .drawer-item_bottom {
   .fv .fv_banner_pc {
     margin-top: 20vh;
   }
+}
+.fv .fv_banner_sp {
+  margin-top: 10vh;
 }
 .fv .company_group {
   padding: 50px 0 100px;
@@ -548,6 +566,11 @@ header .drawer-item_bottom {
   width: 78%;
   margin: 0 auto;
 }
+@media (max-width: 767px) {
+  .worries .worries_inner {
+    width: 90%;
+  }
+}
 .worries .worries_3 .worries_inner,
 .worries .worries_4 .worries_inner {
   box-shadow: 0 0 8px rgba(195, 29, 29, 0.5);
@@ -635,12 +658,18 @@ header .drawer-item_bottom {
 .worries .worries_2 .worries_item {
   width: 30%;
 }
+@media (max-width: 767px) {
+  .worries .worries_2 .worries_item {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+}
 .worries .worries_item {
   width: 20%;
 }
 @media (max-width: 767px) {
   .worries .worries_item {
-    width: 50%;
+    width: 60%;
     margin-bottom: 1rem;
   }
 }
@@ -671,6 +700,7 @@ header .drawer-item_bottom {
 @media (min-width: 768px) {
   .worries .merit_txt {
     width: 20%;
+    vertical-align: middle;
   }
 }
 
@@ -918,6 +948,11 @@ header .drawer-item_bottom {
 .worries_solution .point3 .point3_item_img {
   width: 45%;
 }
+@media (max-width: 767px) {
+  .worries_solution .point3 .point3_item_img {
+    width: 50%;
+  }
+}
 .worries_solution .point3 .point3_button {
   border-radius: 6px;
   background-color: #707070;
@@ -926,6 +961,10 @@ header .drawer-item_bottom {
   display: block;
   text-align: center;
   margin: 0 auto;
+}
+.worries_solution .point3 .point3_button:hover {
+  transition: 0.3s;
+  transform: translateY(-4px);
 }
 .worries_solution .point_contents {
   margin-top: 100px;
@@ -997,6 +1036,11 @@ header .drawer-item_bottom {
   padding: 0 20px;
 }
 @media (max-width: 767px) {
+  .worries_solution .point_contents .point_contents_bottom img {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
   .worries_solution .point_contents .point_contents_bottom .point_contents_table {
     margin-bottom: 1rem;
   }
@@ -1030,7 +1074,7 @@ header .drawer-item_bottom {
 }
 @media (max-width: 767px) {
   .worries_solution .point_contents .point_3 .point_contents_bottom img {
-    width: 85%;
+    width: 80%;
   }
 }
 
@@ -1126,7 +1170,7 @@ header .drawer-item_bottom {
 }
 @media (max-width: 767px) {
   .achievements .case {
-    background: url(../img/fv_bottom_bg.png) no-repeat left -4%/293px;
+    background: url(../img/fv_bottom_bg.png) no-repeat left 11%/293px;
   }
 }
 .achievements .case .poppins {
@@ -1196,7 +1240,7 @@ header .drawer-item_bottom {
   .achievements .case .swiper-button-next {
     top: auto;
     right: var(--swiper-navigation-sides-offset, 33%);
-    bottom: var(--swiper-navigation-sides-offset, -3%);
+    bottom: var(--swiper-navigation-sides-offset, -4%);
   }
 }
 .achievements .case .swiper-button-prev {
@@ -1211,7 +1255,7 @@ header .drawer-item_bottom {
   .achievements .case .swiper-button-prev {
     top: auto;
     left: var(--swiper-navigation-sides-offset, 33%);
-    bottom: var(--swiper-navigation-sides-offset, -3%);
+    bottom: var(--swiper-navigation-sides-offset, -4%);
   }
 }
 .achievements .case .swiper-button-prev,
@@ -1299,11 +1343,16 @@ header .drawer-item_bottom {
   margin: 0 auto;
   position: relative;
   bottom: 0;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .achievements .solution .solution_button {
     width: 80%;
   }
+}
+.achievements .solution .solution_button:hover {
+  transition: 0.3s;
+  transform: translateY(-4px);
 }
 
 /*-------------------
@@ -1383,6 +1432,10 @@ header .drawer-item_bottom {
     font-size: 17px;
   }
 }
+.take_free .take_free_button:hover {
+  transition: 0.3s;
+  transform: translateY(-4px);
+}
 
 .take_free.is-visible .take_free_inner {
   margin: 0 3.5rem;
@@ -1438,6 +1491,11 @@ header .drawer-item_bottom {
     width: 100%;
   }
 }
+.cta .cta_btn1:hover,
+.cta .cta_btn2:hover {
+  transition: 0.3s;
+  transform: translateY(-4px);
+}
 .cta .bg-white {
   width: 80%;
   margin: 80px auto;
@@ -1470,6 +1528,9 @@ header .drawer-item_bottom {
     margin-top: 60px;
   }
 }
+.faq .poppins {
+  font-size: 1rem;
+}
 .faq .faq_ttl_txt {
   font-size: clamp(24px, 2.36vw, 40px);
 }
@@ -1481,13 +1542,18 @@ header .drawer-item_bottom {
     font-size: 16px;
   }
 }
-.faq .poppins {
-  font-size: 22px;
-}
 .faq .qa__block {
   display: flex;
   flex-direction: column;
   min-width: 200px;
+}
+.faq .qa__block .poppins {
+  font-size: 24px;
+}
+@media (max-width: 767px) {
+  .faq .qa__block .poppins {
+    font-size: 22px;
+  }
 }
 .faq .qa__item {
   display: inline-block;
@@ -1496,7 +1562,7 @@ header .drawer-item_bottom {
 .faq .qa__head {
   position: relative;
   text-align: left;
-  padding: 20px 40px;
+  padding: 30px 40px;
   cursor: pointer;
   width: 100%;
   border: 0;
@@ -1504,6 +1570,14 @@ header .drawer-item_bottom {
 @media (max-width: 767px) {
   .faq .qa__head {
     padding: 20px 35px 20px 20px;
+  }
+}
+.faq .qa__head_txt {
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .faq .qa__head_txt {
+    font-size: 18px;
   }
 }
 .faq .qa__body {

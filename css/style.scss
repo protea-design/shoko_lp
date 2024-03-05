@@ -166,6 +166,7 @@ header {
 
     .bg-white {
         padding: 10px 20px;
+        box-shadow: 0 0 20px rgba(211, 211, 211, 100);
 
         @media(max-width: 767px) {
             padding: 5px 20px;
@@ -214,6 +215,12 @@ header {
         border-radius: 8px;
         padding: 10px;
         font-size: 16px;
+    }
+
+    .cta_btn1:hover,
+    .cta_btn2:hover {
+        transition: .3s;
+        transform: translateY(-4px);
     }
 
     // ハンバーガーメニュー
@@ -379,7 +386,8 @@ header {
     }
 
     .fv_txt_3 {
-        font-size: clamp(30px, 2.6vw, 44px);
+        font-size: clamp(33px, 2.6vw, 44px);
+        margin-top: -1%;
 
         @media(max-width: 767px) {
             font-size: clamp(27px, 5.5vw, 44px);
@@ -417,22 +425,33 @@ header {
     .fv_cta_pc {
         width: 69%;
         min-width: 350px;
-        margin-top: 5vh;
+        margin-top: 2vh;
     }
 
     .fv_cta_sp {
         margin-top: 20px;
     }
 
+    .fv_cta_pc:hover,
+    .fv_cta_sp:hover {
+        transition: .3s;
+        transform: translateY(-4px);
+    }
+
     .fv_cta_txt {
         width: 69%;
+        display: block;
+        color: #000;
         margin-top: 15px;
-        text-decoration: underline solid #000000;
         font-size: 14px;
 
         @media(max-width: 767px) {
             width: 100%;
         }
+    }
+
+    .fv_cta_txt_span {
+        border-bottom: 1.5px solid #000;
     }
 
     .fv_banner_pc {
@@ -442,6 +461,10 @@ header {
         @media(max-width: 1110px) {
             margin-top: 20vh;
         }
+    }
+
+    .fv_banner_sp {
+        margin-top: 10vh;
     }
 
     .company_group {
@@ -584,6 +607,10 @@ header {
         box-shadow: 0 00 12px rgba(0, 0, 0, 0.11);
         width: 78%;
         margin: 0 auto;
+
+        @media(max-width: 767px) {
+            width: 90%;
+        }
     }
 
     .worries_3 .worries_inner,
@@ -683,13 +710,18 @@ header {
 
     .worries_2 .worries_item {
         width: 30%;
+
+        @media(max-width: 767px) {
+            width: 60%;
+            margin-bottom: 1rem;
+        }
     }
 
     .worries_item {
         width: 20%;
 
         @media(max-width: 767px) {
-            width: 50%;
+            width: 60%;
             margin-bottom: 1rem;
         }
     }
@@ -722,6 +754,7 @@ header {
     .merit_txt {
         @media(min-width: 768px) {
             width: 20%;
+            vertical-align: middle;
         }
 
     }
@@ -1004,6 +1037,10 @@ header {
 
         .point3_item_img {
             width: 45%;
+
+            @media(max-width: 767px) {
+                width: 50%;
+            }
         }
 
         .point3_button {
@@ -1014,6 +1051,11 @@ header {
             display: block;
             text-align: center;
             margin: 0 auto;
+        }
+
+        .point3_button:hover {
+            transition: 0.3s;
+            transform: translateY(-4px);
         }
     }
 
@@ -1088,6 +1130,12 @@ header {
                 padding: 0 20px;
             }
 
+            img {
+                @media(max-width: 767px) {
+                    width: 80%;
+                }
+            }
+
             .point_contents_table {
                 @media(max-width: 767px) {
                     margin-bottom: 1rem;
@@ -1124,7 +1172,7 @@ header {
             width: 25%;
 
             @media(max-width: 767px) {
-                width: 85%;
+                width: 80%;
             }
         }
     }
@@ -1232,7 +1280,7 @@ header {
 
 
         @media(max-width: 767px) {
-            background: url(../img/fv_bottom_bg.png) no-repeat left -4% / 293px;
+            background: url(../img/fv_bottom_bg.png) no-repeat left 11% / 293px;
         }
 
         .poppins {
@@ -1278,7 +1326,7 @@ header {
         .swiper-area {
             position: relative;
         }
-        
+
         .swiper {
             border-radius: 32px;
             box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
@@ -1308,7 +1356,7 @@ header {
             @media(max-width: 767px) {
                 top: auto;
                 right: var(--swiper-navigation-sides-offset, 33%);
-                bottom: var(--swiper-navigation-sides-offset, -3%);
+                bottom: var(--swiper-navigation-sides-offset, -4%);
 
             }
         }
@@ -1323,7 +1371,7 @@ header {
             @media(max-width: 767px) {
                 top: auto;
                 left: var(--swiper-navigation-sides-offset, 33%);
-                bottom: var(--swiper-navigation-sides-offset, -3%);
+                bottom: var(--swiper-navigation-sides-offset, -4%);
 
             }
         }
@@ -1425,10 +1473,16 @@ header {
             margin: 0 auto;
             position: relative;
             bottom: 0;
+            cursor: pointer;
 
             @media(max-width: 767px) {
                 width: 80%;
             }
+        }
+
+        .solution_button:hover {
+            transition: .3s;
+            transform: translateY(-4px);
         }
     }
 }
@@ -1473,7 +1527,7 @@ header {
         @media(min-width: 768px) {
             transform: translateX(10%);
         }
-        
+
         p {
             font-size: 18px;
 
@@ -1510,6 +1564,11 @@ header {
             width: 100%;
             font-size: 17px;
         }
+    }
+
+    .take_free_button:hover {
+        transition: .3s;
+        transform: translateY(-4px);
     }
 }
 
@@ -1570,6 +1629,12 @@ header {
         }
     }
 
+    .cta_btn1:hover,
+    .cta_btn2:hover {
+        transition: .3s;
+        transform: translateY(-4px);
+    }
+
     .bg-white {
         width: 80%;
         margin: 80px auto;
@@ -1603,6 +1668,10 @@ header {
         margin-top: 60px;
     }
 
+    .poppins {
+        font-size: 1rem;
+    }
+
     .faq_ttl_txt {
         font-size: clamp(24px, 2.36vw, 40px);
     }
@@ -1615,15 +1684,19 @@ header {
         }
     }
 
-    .poppins {
-        font-size: 22px;
-    }
-
     // アコーディオン
     .qa__block {
         display: flex;
         flex-direction: column;
         min-width: 200px;
+
+        .poppins {
+            font-size: 24px;
+
+            @media(max-width: 767px) {
+                font-size: 22px;
+            }
+        }
     }
 
     .qa__item {
@@ -1634,13 +1707,21 @@ header {
     .qa__head {
         position: relative;
         text-align: left;
-        padding: 20px 40px;
+        padding: 30px 40px;
         cursor: pointer;
         width: 100%;
         border: 0;
 
         @media(max-width: 767px) {
             padding: 20px 35px 20px 20px;
+        }
+    }
+
+    .qa__head_txt {
+        font-size: 20px;
+
+        @media(max-width: 767px) {
+            font-size: 18px;
         }
     }
 

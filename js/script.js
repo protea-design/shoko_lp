@@ -36,7 +36,7 @@ $(window).scroll(function () {
   });
 });
 
-// アコーディオン
+// ハンバーガーメニュー
 // Q1
 const qa1 = document.querySelector(".js-ac1"); // js-ac要素を取得し変数に格納
 function acToggle() { // クリック時に発火する関数を作成
@@ -187,4 +187,32 @@ $(window).scroll(function () {
 });
 
 
-// ハンバーガーメニュー
+// SOLUTIONアコーディオン
+$(function () {
+	/* 表示する数を取得 */
+	var contentsCount = $(".solution_1").length;
+	/* 初期表示の数を変数に代入 */
+	var n = 3;
+
+	/* 3以下の場合は、「もっと見る」ボタン非表示 */
+	if (contentsCount <= n) {
+		$(".solution_button").hide();
+
+		/* 3以上の場合は、sliceを利用して4以降のコンテンツを非表示 */
+	} else {
+		$(".solution_1").slice(n).hide();
+
+		/* 非表示のコンテンツがある場合、「もっと見る」ボタンを「閉じる」ボタンに変更 */
+		$(".solution_button").click(function () {
+			if ($(".solution_1").slice(n).is(':hidden')) {
+				$(".solution_1").slice(n).slideDown();
+				$(this).text('閉じる');
+
+				/* 非表示のコンテンツがない場合は、閉じる」ボタンを「もっと見る」ボタンに変更 */
+			} else {
+				$(".solution_1").slice(n).slideUp();
+				$(this).text('くわしくみる');
+			}
+		});
+	}
+});

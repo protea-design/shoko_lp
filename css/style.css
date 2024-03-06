@@ -572,6 +572,9 @@ header .drawer-item_bottom {
 /*-------------------
 	お悩み
 -------------------*/
+.worries {
+  overflow-x: hidden;
+}
 .worries .worries_right_item {
   display: block;
   transition: all 0.5s cubic-bezier(0.4, 0, 0, 1);

@@ -614,6 +614,8 @@ header {
 	お悩み
 -------------------*/
 .worries {
+    overflow-x: hidden;
+    
     .worries_right_item {
         display: block;
         transition: all .5s cubic-bezier(.4, 0, 0, 1);

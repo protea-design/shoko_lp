@@ -5,6 +5,7 @@ const swiper = new Swiper('.fv_swiper', {
     delay: 0,
   },
   speed: 3000,
+  spaceBetween: 20,
   slidesPerView: 4,
   breakpoints: {
     767: {
@@ -23,7 +24,7 @@ const case_swiper = new Swiper('.swiper', {
   },
 });
 
-
+// お悩み左
 $(window).scroll(function () {
   $('.slidein').each(function () {
     var elemPos = $(this).offset().top,
@@ -35,6 +36,21 @@ $(window).scroll(function () {
     }
   });
 });
+
+// お悩み右
+$(window).scroll(function () {
+  $('.worries_right_item').each(function () {
+    var elemPos2 = $(this).offset().top,
+      scroll = $(window).scrollTop(),
+      windowHeight = $(window).height();
+
+    if (scroll > elemPos2 - windowHeight + 150) {
+      $(this).addClass('is-visible');
+    }
+  });
+});
+
+
 
 // ハンバーガーメニュー
 // Q1

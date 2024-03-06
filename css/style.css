@@ -142,6 +142,11 @@ img {
   overflow-x: hidden;
 }
 
+.flex1 {
+  flex: 1;
+  padding: 0 20px;
+}
+
 .inner {
   max-width: 1060px;
   margin: 0 auto;
@@ -188,6 +193,10 @@ header .header_inner {
 }
 header .header_txt {
   border-bottom: 1.5px solid #085A6B;
+}
+header .header_txt:hover {
+  transition: 0.3s;
+  transform: translateY(-4px);
 }
 header .tell_number {
   font-size: 25px;
@@ -558,6 +567,18 @@ header .drawer-item_bottom {
 /*-------------------
 	お悩み
 -------------------*/
+.worries .worries_right_item {
+  display: block;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0, 1);
+  transition-property: transform, opacity;
+  opacity: 0;
+  transform-origin: center left;
+  transform: scale(1.3);
+}
+.worries .worries_right_item.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
 .worries .worries_inner {
   background-color: #fff;
   border-radius: 17px;
@@ -639,9 +660,6 @@ header .drawer-item_bottom {
     text-align: center;
   }
 }
-.worries .worries_2 .case_inner {
-  text-align: left;
-}
 .worries .worries_3 .case_inner p:nth-child(3),
 .worries .worries_4 .case_inner p:nth-child(1) {
   font-size: 21px;
@@ -656,16 +674,20 @@ header .drawer-item_bottom {
   font-size: 11px;
 }
 .worries .worries_2 .worries_item {
-  width: 30%;
+  width: 100%;
+  border-radius: 13px;
 }
 @media (max-width: 767px) {
   .worries .worries_2 .worries_item {
     width: 60%;
     margin-bottom: 1rem;
+    display: block;
+    margin: 0 auto 1rem;
   }
 }
 .worries .worries_item {
   width: 20%;
+  border-radius: 13px;
 }
 @media (max-width: 767px) {
   .worries .worries_item {
@@ -678,7 +700,6 @@ header .drawer-item_bottom {
   border-radius: 18px;
   color: #fff;
   padding: 5px 20px;
-  display: inline-block;
 }
 @media (max-width: 767px) {
   .worries .merit {
@@ -690,7 +711,6 @@ header .drawer-item_bottom {
   border-radius: 18px;
   color: #fff;
   padding: 5px 20px;
-  display: inline-block;
 }
 @media (max-width: 767px) {
   .worries .demerit {
@@ -699,7 +719,6 @@ header .drawer-item_bottom {
 }
 @media (min-width: 768px) {
   .worries .merit_txt {
-    width: 20%;
     vertical-align: middle;
   }
 }
@@ -947,6 +966,7 @@ header .drawer-item_bottom {
 }
 .worries_solution .point3 .point3_item_img {
   width: 45%;
+  border-radius: 13px;
 }
 @media (max-width: 767px) {
   .worries_solution .point3 .point3_item_img {
@@ -1035,6 +1055,9 @@ header .drawer-item_bottom {
   flex: 1;
   padding: 0 20px;
 }
+.worries_solution .point_contents .point_contents_bottom img {
+  border-radius: 25px;
+}
 @media (max-width: 767px) {
   .worries_solution .point_contents .point_contents_bottom img {
     width: 80%;
@@ -1048,11 +1071,22 @@ header .drawer-item_bottom {
 .worries_solution .point_contents .point_contents_bottom .point_contents_table div {
   border: 1px solid #CCCCCC;
 }
+.worries_solution .point_contents .point_contents_bottom .point_contents_table .table_left {
+  border-bottom: 0;
+}
+@media (min-width: 768px) {
+  .worries_solution .point_contents .point_contents_bottom .point_contents_table .table_right {
+    border-bottom: 0;
+    border-left: 0;
+  }
+}
+.worries_solution .point_contents .point_contents_bottom .point_contents_table .table_right_last {
+  border-left: 0;
+}
 .worries_solution .point_contents .point_contents_bottom .point_contents_table div:first-child {
   padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 @media (min-width: 768px) {
   .worries_solution .point_contents .point_contents_bottom .point_contents_table div:first-child {
@@ -1066,7 +1100,7 @@ header .drawer-item_bottom {
 @media (min-width: 768px) {
   .worries_solution .point_contents .point_contents_bottom .point_contents_table div:nth-child(2) {
     width: 70%;
-    padding: 1rem 1rem 1rem 3rem;
+    padding: 1rem 1rem 1rem 1rem;
   }
 }
 .worries_solution .point_contents .point_3 .point_contents_bottom img {
@@ -1176,15 +1210,25 @@ header .drawer-item_bottom {
 .achievements .case .poppins {
   font-size: 1rem;
 }
+@media (min-width: 768px) {
+  .achievements .case .flex_basis60 {
+    flex-basis: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .achievements .case .flex_basis40 {
+    flex-basis: 40%;
+  }
+}
 .achievements .case .case_ttl_txt {
   font-size: clamp(24px, 2.36vw, 40px);
 }
 .achievements .case .case_swipe {
-  padding: 30px;
+  padding: 40px;
 }
-@media (min-width: 768px) and (max-width: 1228px) {
+@media (max-width: 767px) {
   .achievements .case .case_swipe {
-    padding: 20px;
+    padding: 25px;
   }
 }
 .achievements .case .case_swipe_catch {
@@ -1207,6 +1251,9 @@ header .drawer-item_bottom {
   background-size: contain;
   margin-right: 3px;
   transform: translateY(5px);
+}
+.achievements .case .case_item {
+  border-radius: 35px;
 }
 .achievements .case .swiper-area {
   position: relative;
@@ -1316,6 +1363,7 @@ header .drawer-item_bottom {
 }
 .achievements .solution img {
   width: 40%;
+  border-radius: 31px;
 }
 @media (max-width: 767px) {
   .achievements .solution img {
@@ -1412,7 +1460,7 @@ header .drawer-item_bottom {
   width: 30%;
 }
 .take_free .take_free_button {
-  background-color: #F4D169;
+  background-color: #FF9B45;
   border-radius: 5px;
   padding: 20px 10px;
   display: block;
@@ -1474,7 +1522,7 @@ header .drawer-item_bottom {
   }
 }
 .cta .cta_btn1 {
-  background-color: #F4D169;
+  background-color: #FF9B45;
 }
 .cta .cta_btn1,
 .cta .cta_btn2 {
@@ -1657,6 +1705,7 @@ header .drawer-item_bottom {
 
 .company h3 img {
   margin-top: 1.6em;
+  width: 30%;
 }
 
 .company .button-company {

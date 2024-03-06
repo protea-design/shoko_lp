@@ -369,7 +369,7 @@ header .drawer-item_bottom {
   font-size: clamp(14px, 2.6vw, 23px);
 }
 .fv .fv_txt_3 {
-  font-size: clamp(33px, 2.6vw, 44px);
+  font-size: clamp(30px, 2.6vw, 44px);
   margin-top: -1%;
 }
 @media (max-width: 767px) {
@@ -447,6 +447,11 @@ header .drawer-item_bottom {
 }
 .fv .company_group {
   padding: 50px 0 100px;
+}
+@media (min-width: 768px) and (max-width: 950px) {
+  .fv .company_group {
+    padding: 100px 0 20px;
+  }
 }
 @media (max-width: 767px) {
   .fv .company_group {

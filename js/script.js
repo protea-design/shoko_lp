@@ -26,26 +26,26 @@ const case_swiper = new Swiper('.swiper', {
 
 // お悩み左
 $(window).scroll(function () {
-  $('.slidein').each(function () {
+  $('.worries_area').each(function () {
     var elemPos = $(this).offset().top,
       scroll = $(window).scrollTop(),
       windowHeight = $(window).height();
 
-    if (scroll > elemPos - windowHeight + 150) {
-      $(this).addClass('scrollin');
+    if (scroll > elemPos - windowHeight + 400) {
+      $('.slidein').addClass('scrollin');
     }
   });
 });
 
 // お悩み右
 $(window).scroll(function () {
-  $('.worries_right_item').each(function () {
+  $('.worries_right').each(function () {
     var elemPos2 = $(this).offset().top,
       scroll = $(window).scrollTop(),
       windowHeight = $(window).height();
 
     if (scroll > elemPos2 - windowHeight + 150) {
-      $(this).addClass('is-visible');
+      $('.worries_right_item').addClass('is-visible');
     }
   });
 });

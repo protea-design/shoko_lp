@@ -482,7 +482,7 @@ header {
 
         @media(min-width: 768px) and (max-width: 950px) {
             padding: 100px 0 20px;
-        } 
+        }
 
         @media(max-width: 767px) {
             padding: 50px 0 20px;
@@ -615,7 +615,7 @@ header {
 -------------------*/
 .worries {
     overflow-x: hidden;
-    
+
     .worries_right_item {
         display: block;
         transition: all .5s cubic-bezier(.4, 0, 0, 1);
@@ -1189,7 +1189,13 @@ header {
             }
 
             .point_contents_table .table_right_last {
-                border-left: 0;
+                @media(min-width: 768px) {
+                    border-left: 0;
+                }
+                @media(max-width: 767px) {
+                    border-top: 0;
+                }
+
             }
 
             .point_contents_table div:first-child {

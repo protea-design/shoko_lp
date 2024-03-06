@@ -1088,8 +1088,15 @@ header .drawer-item_bottom {
     border-left: 0;
   }
 }
-.worries_solution .point_contents .point_contents_bottom .point_contents_table .table_right_last {
-  border-left: 0;
+@media (min-width: 768px) {
+  .worries_solution .point_contents .point_contents_bottom .point_contents_table .table_right_last {
+    border-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .worries_solution .point_contents .point_contents_bottom .point_contents_table .table_right_last {
+    border-top: 0;
+  }
 }
 .worries_solution .point_contents .point_contents_bottom .point_contents_table div:first-child {
   padding: 1rem;

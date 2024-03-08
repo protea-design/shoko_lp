@@ -79,6 +79,10 @@ img {
     color: #F4D169;
 }
 
+.text_orange {
+    color: #FF9B45;
+}
+
 .bg_gray {
     background-color: #F5F5F5;
 }
@@ -144,7 +148,7 @@ img {
 
 .flex1 {
     flex: 1;
-    padding: 0 20px;
+    padding: 0 3%;
 }
 
 .inner {
@@ -396,8 +400,9 @@ header {
     }
 
     .fv_txt_3 {
-        font-size: clamp(30px, 2.6vw, 44px);
+        font-size: clamp(33px, 2.6vw, 44px);
         margin-top: -1%;
+        white-space: nowrap;
 
         @media(max-width: 767px) {
             font-size: clamp(27px, 5.5vw, 44px);
@@ -499,10 +504,14 @@ header {
     }
 
     .company_txt {
-        font-size: 30px;
+        font-size: 24px;
 
         @media(max-width: 767px) {
             font-size: 17px;
+        }
+
+        .poppins {
+            font-size: 30px;
         }
     }
 
@@ -521,7 +530,7 @@ header {
 -------------------*/
 .fv_bottom {
     background: url(../img/fv_bottom_bg.png) no-repeat 10% 20% / 368px;
-    padding: 100px 0 70px;
+    padding: 0 0 70px;
 
     @media(max-width: 767px) {
         background: url(../img/fv_bottom_bg.png) no-repeat right 6% / 293px;
@@ -635,14 +644,26 @@ header {
     }
 
     .worries_right_item.delay1 {
-        transition-delay: 1s;
+        transition-delay: .5s;
     }
 
     .worries_right_item.delay2 {
-        transition-delay: 2s;
+        transition-delay: 1s;
     }
 
     .worries_right_item.delay3 {
+        transition-delay: 1.5s;
+    }
+
+    .worries_right_item.delay4 {
+        transition-delay: 2s;
+    }
+
+    .worries_right_item.delay5 {
+        transition-delay: 2.5s;
+    }
+
+    .worries_right_item.delay6 {
         transition-delay: 3s;
     }
 
@@ -661,6 +682,12 @@ header {
 
         @media(max-width: 767px) {
             width: 90%;
+        }
+    }
+
+    .worries_2 .worries_inner {
+        @media(min-width: 768px) and (max-width: 1080px) {
+            padding: 15px 0px
         }
     }
 
@@ -710,10 +737,16 @@ header {
         }
     }
 
+    .worries_2 .worries_right p {
+        @media(min-width: 768px) and (max-width: 1200px) {
+            font-size: 14px;
+        }
+    }
+
     .slidein {
         opacity: 0;
         transform: translate(0, 0);
-        transition: all 1.0s;
+        transition: all .5s;
 
         &.slidein-bottom {
             transform: translate(0, 100%);
@@ -755,6 +788,16 @@ header {
         font-size: 11px;
     }
 
+    .worries_1 .worries_item {
+        width: 30%;
+        border-radius: 10px;
+
+        @media(max-width: 767px) {
+            width: 60%;
+            margin-bottom: 1rem;
+        }
+    }
+
     .worries_2 .worries_item {
         width: 100%;
         border-radius: 13px;
@@ -769,7 +812,7 @@ header {
 
     .worries_item {
         width: 20%;
-        border-radius: 13px;
+        border-radius: 10px;
 
         @media(max-width: 767px) {
             width: 60%;
@@ -782,11 +825,12 @@ header {
         border-radius: 18px;
         color: #fff;
         padding: 5px 20px;
+        max-width: 10vw;
+        min-width: 115px;
 
-        @media(max-width: 767px) {
-            background-color: #008BA5;
+        @media(min-width: 768px) and (max-width: 1200px) {
+            min-width: 100px;
         }
-
     }
 
     .demerit {
@@ -794,9 +838,11 @@ header {
         border-radius: 18px;
         color: #fff;
         padding: 5px 20px;
+        max-width: 10vw;
+        min-width: 115px;
 
-        @media(max-width: 767px) {
-            background-color: #707070;
+        @media(min-width: 768px) and (max-width: 1200px) {
+            min-width: 100px;
         }
     }
 
@@ -996,17 +1042,17 @@ header {
             }
 
             .column3 {
-                border-right: 1px solid #707070;
+                border-right: 1px solid #CCCCCC;
                 border-collapse: collapse;
             }
 
             .column3.bottom {
-                border-bottom: 1px solid #707070;
+                border-bottom: 1px solid #CCCCCC;
                 border-collapse: collapse;
             }
 
             .tbody_bottomright.column4 {
-                border-bottom: 1px solid #707070;
+                border-bottom: 1px solid #CCCCCC;
                 border-radius: 0 0 19px 0;
             }
 
@@ -1402,6 +1448,17 @@ header {
             width: 25px;
             height: 25px;
             background: url(../img/light_icon.png) no-repeat;
+            background-size: contain;
+            margin-right: 3px;
+            transform: translateY(5px);
+        }
+
+        .case_swipe_txt.kadai_icon::before {
+            content: "";
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background: url(../img/kadai_icon.png) no-repeat;
             background-size: contain;
             margin-right: 3px;
             transform: translateY(5px);

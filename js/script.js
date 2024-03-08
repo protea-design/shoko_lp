@@ -25,27 +25,101 @@ const case_swiper = new Swiper('.swiper', {
 });
 
 // お悩み左
+// お悩み1
 $(window).scroll(function () {
-  $('.worries_area').each(function () {
+  $('.slidein_1').each(function () {
     var elemPos = $(this).offset().top,
       scroll = $(window).scrollTop(),
       windowHeight = $(window).height();
 
-    if (scroll > elemPos - windowHeight + 400) {
-      $('.slidein').addClass('scrollin');
+    if (scroll > elemPos - windowHeight + 50) {
+      $('.slidein_1').addClass('scrollin');
+    }
+  });
+});
+// お悩み2
+$(window).scroll(function () {
+  $('.slidein_2').each(function () {
+    var elemPos = $(this).offset().top,
+      scroll = $(window).scrollTop(),
+      windowHeight = $(window).height();
+
+    if (scroll > elemPos - windowHeight + 150) {
+      $('.slidein_2').addClass('scrollin');
+    }
+  });
+});
+// お悩み3
+$(window).scroll(function () {
+  $('.slidein_3').each(function () {
+    var elemPos = $(this).offset().top,
+      scroll = $(window).scrollTop(),
+      windowHeight = $(window).height();
+
+    if (scroll > elemPos - windowHeight + 150) {
+      $('.slidein_3').addClass('scrollin');
+    }
+  });
+});
+// お悩み4
+$(window).scroll(function () {
+  $('.slidein_4').each(function () {
+    var elemPos = $(this).offset().top,
+      scroll = $(window).scrollTop(),
+      windowHeight = $(window).height();
+
+    if (scroll > elemPos - windowHeight + 150) {
+      $('.slidein_4').addClass('scrollin');
     }
   });
 });
 
 // お悩み右
+// お悩み1
 $(window).scroll(function () {
-  $('.worries_right').each(function () {
+  $('.slidein_1').each(function () {
+    var elemPos2 = $(this).offset().top,
+      scroll = $(window).scrollTop(),
+      windowHeight = $(window).height();
+
+    if (scroll > elemPos2 - windowHeight + 50) {
+      $('.wri_1').addClass('is-visible');
+    }
+  });
+});
+// お悩み2
+$(window).scroll(function () {
+  $('.slidein_2').each(function () {
     var elemPos2 = $(this).offset().top,
       scroll = $(window).scrollTop(),
       windowHeight = $(window).height();
 
     if (scroll > elemPos2 - windowHeight + 150) {
-      $('.worries_right_item').addClass('is-visible');
+      $('.wri_2').addClass('is-visible');
+    }
+  });
+});
+// お悩み3
+$(window).scroll(function () {
+  $('.slidein_3').each(function () {
+    var elemPos2 = $(this).offset().top,
+      scroll = $(window).scrollTop(),
+      windowHeight = $(window).height();
+
+    if (scroll > elemPos2 - windowHeight + 150) {
+      $('.wri_3').addClass('is-visible');
+    }
+  });
+});
+// お悩み4
+$(window).scroll(function () {
+  $('.slidein_4').each(function () {
+    var elemPos2 = $(this).offset().top,
+      scroll = $(window).scrollTop(),
+      windowHeight = $(window).height();
+
+    if (scroll > elemPos2 - windowHeight + 150) {
+      $('.wri_4').addClass('is-visible');
     }
   });
 });

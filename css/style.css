@@ -78,6 +78,10 @@ img {
   color: #F4D169;
 }
 
+.text_orange {
+  color: #FF9B45;
+}
+
 .bg_gray {
   background-color: #F5F5F5;
 }
@@ -144,7 +148,7 @@ img {
 
 .flex1 {
   flex: 1;
-  padding: 0 20px;
+  padding: 0 3%;
 }
 
 .inner {
@@ -369,8 +373,9 @@ header .drawer-item_bottom {
   font-size: clamp(14px, 2.6vw, 23px);
 }
 .fv .fv_txt_3 {
-  font-size: clamp(30px, 2.6vw, 44px);
+  font-size: clamp(33px, 2.6vw, 44px);
   margin-top: -1%;
+  white-space: nowrap;
 }
 @media (max-width: 767px) {
   .fv .fv_txt_3 {
@@ -468,12 +473,15 @@ header .drawer-item_bottom {
   }
 }
 .fv .company_txt {
-  font-size: 30px;
+  font-size: 24px;
 }
 @media (max-width: 767px) {
   .fv .company_txt {
     font-size: 17px;
   }
+}
+.fv .company_txt .poppins {
+  font-size: 30px;
 }
 .fv .fv_swiper {
   overflow: hidden;
@@ -487,7 +495,7 @@ header .drawer-item_bottom {
 -------------------*/
 .fv_bottom {
   background: url(../img/fv_bottom_bg.png) no-repeat 10% 20%/368px;
-  padding: 100px 0 70px;
+  padding: 0 0 70px;
 }
 @media (max-width: 767px) {
   .fv_bottom {
@@ -593,12 +601,21 @@ header .drawer-item_bottom {
   transform: scale(1.3);
 }
 .worries .worries_right_item.delay1 {
-  transition-delay: 1s;
+  transition-delay: 0.5s;
 }
 .worries .worries_right_item.delay2 {
-  transition-delay: 2s;
+  transition-delay: 1s;
 }
 .worries .worries_right_item.delay3 {
+  transition-delay: 1.5s;
+}
+.worries .worries_right_item.delay4 {
+  transition-delay: 2s;
+}
+.worries .worries_right_item.delay5 {
+  transition-delay: 2.5s;
+}
+.worries .worries_right_item.delay6 {
   transition-delay: 3s;
 }
 .worries .worries_right_item.is-visible {
@@ -616,6 +633,11 @@ header .drawer-item_bottom {
 @media (max-width: 767px) {
   .worries .worries_inner {
     width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+  .worries .worries_2 .worries_inner {
+    padding: 15px 0px;
   }
 }
 .worries .worries_3 .worries_inner,
@@ -658,10 +680,15 @@ header .drawer-item_bottom {
     margin-top: 70px;
   }
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .worries .worries_2 .worries_right p {
+    font-size: 14px;
+  }
+}
 .worries .slidein {
   opacity: 0;
   transform: translate(0, 0);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .worries .slidein.slidein-bottom {
   transform: translate(0, 100%);
@@ -699,6 +726,16 @@ header .drawer-item_bottom {
 .worries .case_txt {
   font-size: 11px;
 }
+.worries .worries_1 .worries_item {
+  width: 30%;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .worries .worries_1 .worries_item {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+}
 .worries .worries_2 .worries_item {
   width: 100%;
   border-radius: 13px;
@@ -713,7 +750,7 @@ header .drawer-item_bottom {
 }
 .worries .worries_item {
   width: 20%;
-  border-radius: 13px;
+  border-radius: 10px;
 }
 @media (max-width: 767px) {
   .worries .worries_item {
@@ -726,10 +763,12 @@ header .drawer-item_bottom {
   border-radius: 18px;
   color: #fff;
   padding: 5px 20px;
+  max-width: 10vw;
+  min-width: 115px;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .worries .merit {
-    background-color: #008BA5;
+    min-width: 100px;
   }
 }
 .worries .demerit {
@@ -737,10 +776,12 @@ header .drawer-item_bottom {
   border-radius: 18px;
   color: #fff;
   padding: 5px 20px;
+  max-width: 10vw;
+  min-width: 115px;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .worries .demerit {
-    background-color: #707070;
+    min-width: 100px;
   }
 }
 @media (min-width: 768px) {
@@ -916,15 +957,15 @@ header .drawer-item_bottom {
   border-collapse: collapse;
 }
 .worries_solution .comparison table .column3 {
-  border-right: 1px solid #707070;
+  border-right: 1px solid #CCCCCC;
   border-collapse: collapse;
 }
 .worries_solution .comparison table .column3.bottom {
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #CCCCCC;
   border-collapse: collapse;
 }
 .worries_solution .comparison table .tbody_bottomright.column4 {
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #CCCCCC;
   border-radius: 0 0 19px 0;
 }
 .worries_solution .comparison table .column4 {
@@ -1281,6 +1322,16 @@ header .drawer-item_bottom {
   width: 25px;
   height: 25px;
   background: url(../img/light_icon.png) no-repeat;
+  background-size: contain;
+  margin-right: 3px;
+  transform: translateY(5px);
+}
+.achievements .case .case_swipe_txt.kadai_icon::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/kadai_icon.png) no-repeat;
   background-size: contain;
   margin-right: 3px;
   transform: translateY(5px);

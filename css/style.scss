@@ -553,7 +553,7 @@ header {
 
         @media(min-width: 768px) {
             box-shadow: 0 0 12px rgba(0, 0, 0, 0.11);
-            border-radius: 40px;
+            border-radius: 10px;
             padding: 25px 20px;
         }
     }
@@ -675,7 +675,7 @@ header {
 
     .worries_inner {
         background-color: #fff;
-        border-radius: 17px;
+        border-radius: 10px;
         padding: 15px;
         box-shadow: 0 00 12px rgba(0, 0, 0, 0.11);
         width: 78%;
@@ -801,7 +801,7 @@ header {
 
     .worries_2 .worries_item {
         width: 100%;
-        border-radius: 13px;
+        border-radius: 10px;
 
         @media(max-width: 767px) {
             width: 60%;
@@ -1050,7 +1050,7 @@ header {
 
             .tbody_bottomright.column4 {
                 border-bottom: 1px solid #CCCCCC;
-                border-radius: 0 0 19px 0;
+                border-radius: 0 0 10px 0;
             }
 
             .column4 {
@@ -1075,19 +1075,19 @@ header {
             }
 
             .tbody_topleft {
-                border-radius: 19px 0 0 0;
+                border-radius: 10px 0 0 0;
             }
 
             .tbody_topright {
-                border-radius: 0 19px 0 0;
+                border-radius: 0 10px 0 0;
             }
 
             .tbody_bottomleft {
-                border-radius: 0 0 0 19px;
+                border-radius: 0 0 0 10px;
             }
 
             .tbody_bottomright {
-                border-radius: 0 0 19px 0;
+                border-radius: 0 0 10px 0;
             }
         }
     }
@@ -1101,7 +1101,7 @@ header {
 
         .point3_item {
             box-shadow: 0 00 12px rgba(0, 0, 0, 0.11);
-            border-radius: 25px;
+            border-radius: 10px;
             padding: 25px;
             font-size: 13px;
             flex: 1;
@@ -1128,7 +1128,7 @@ header {
 
         .point3_item_img {
             width: 45%;
-            border-radius: 13px;
+            border-radius: 10px;
 
             @media(max-width: 767px) {
                 width: 50%;
@@ -1174,7 +1174,7 @@ header {
         .point_contents_top {
             display: inline-block;
             padding: 16px 20px;
-            border-radius: 17px 17px 0 0;
+            border-radius: 10px 10px 0 0;
 
             p {
                 display: inline-block;
@@ -1202,7 +1202,7 @@ header {
             box-shadow: 4px 0 8px rgba(0, 0, 0, 0.15);
 
             @media(min-width: 768px) {
-                border-radius: 0 40px 40px 40px;
+                border-radius: 0 10px 10px 10px;
             }
 
             @media(max-width: 767px) {
@@ -1223,7 +1223,7 @@ header {
             }
 
             img {
-                border-radius: 25px;
+                border-radius: 10px;
 
                 @media(max-width: 767px) {
                     width: 80%;
@@ -1462,7 +1462,7 @@ header {
         }
 
         .case_item {
-            border-radius: 35px;
+            border-radius: 10px;
         }
 
         // Swiper
@@ -1471,7 +1471,7 @@ header {
         }
 
         .swiper {
-            border-radius: 32px;
+            border-radius: 10px;
             box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
             height: 100%;
 
@@ -1574,7 +1574,7 @@ header {
         .solution_3 {
             box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
             padding: 30px 30px 30px 0;
-            border-radius: 32px;
+            border-radius: 10px;
 
             @media(max-width: 767px) {
                 padding: 25px 0;
@@ -1589,7 +1589,7 @@ header {
 
         img {
             width: 40%;
-            border-radius: 31px;
+            border-radius: 10px;
 
             @media(max-width: 767px) {
                 width: 100%;
@@ -1652,13 +1652,13 @@ header {
     }
 
     .take_free_inner {
-        border-radius: 33px;
+        border-radius: 10px;
         padding: 50px 30px;
         position: relative;
         transition: all .5s cubic-bezier(.4, 0, 0, 1);
 
         @media(max-width: 767px) {
-            border-radius: 27px;
+            border-radius: 10px;
             padding: 20px;
         }
     }

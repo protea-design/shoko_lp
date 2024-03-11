@@ -518,7 +518,7 @@ header .drawer-item_bottom {
 @media (min-width: 768px) {
   .fv_bottom .fv_bottom_inner {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.11);
-    border-radius: 40px;
+    border-radius: 10px;
     padding: 25px 20px;
   }
 }
@@ -623,7 +623,7 @@ header .drawer-item_bottom {
 }
 .worries .worries_inner {
   background-color: #fff;
-  border-radius: 17px;
+  border-radius: 10px;
   padding: 15px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.11);
   width: 78%;
@@ -737,7 +737,7 @@ header .drawer-item_bottom {
 }
 .worries .worries_2 .worries_item {
   width: 100%;
-  border-radius: 13px;
+  border-radius: 10px;
 }
 @media (max-width: 767px) {
   .worries .worries_2 .worries_item {
@@ -960,7 +960,7 @@ header .drawer-item_bottom {
 }
 .worries_solution .comparison table .tbody_bottomright.column4 {
   border-bottom: 1px solid #CCCCCC;
-  border-radius: 0 0 19px 0;
+  border-radius: 0 0 10px 0;
 }
 .worries_solution .comparison table .column4 {
   border-right: 1px solid #CCCCCC;
@@ -982,16 +982,16 @@ header .drawer-item_bottom {
   box-shadow: 0 3px 8px rgba(0, 139, 165, 0.16);
 }
 .worries_solution .comparison table .tbody_topleft {
-  border-radius: 19px 0 0 0;
+  border-radius: 10px 0 0 0;
 }
 .worries_solution .comparison table .tbody_topright {
-  border-radius: 0 19px 0 0;
+  border-radius: 0 10px 0 0;
 }
 .worries_solution .comparison table .tbody_bottomleft {
-  border-radius: 0 0 0 19px;
+  border-radius: 0 0 0 10px;
 }
 .worries_solution .comparison table .tbody_bottomright {
-  border-radius: 0 0 19px 0;
+  border-radius: 0 0 10px 0;
 }
 .worries_solution .point3 {
   margin-top: 110px;
@@ -1001,7 +1001,7 @@ header .drawer-item_bottom {
 }
 .worries_solution .point3 .point3_item {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.11);
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 25px;
   font-size: 13px;
   flex: 1;
@@ -1027,7 +1027,7 @@ header .drawer-item_bottom {
 }
 .worries_solution .point3 .point3_item_img {
   width: 45%;
-  border-radius: 13px;
+  border-radius: 10px;
 }
 @media (max-width: 767px) {
   .worries_solution .point3 .point3_item_img {
@@ -1069,7 +1069,7 @@ header .drawer-item_bottom {
 .worries_solution .point_contents .point_contents_top {
   display: inline-block;
   padding: 16px 20px;
-  border-radius: 17px 17px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 .worries_solution .point_contents .point_contents_top p {
   display: inline-block;
@@ -1096,7 +1096,7 @@ header .drawer-item_bottom {
 }
 @media (min-width: 768px) {
   .worries_solution .point_contents .point_contents_bottom {
-    border-radius: 0 40px 40px 40px;
+    border-radius: 0 10px 10px 10px;
   }
 }
 @media (max-width: 767px) {
@@ -1117,7 +1117,7 @@ header .drawer-item_bottom {
   padding: 0 20px;
 }
 .worries_solution .point_contents .point_contents_bottom img {
-  border-radius: 25px;
+  border-radius: 10px;
 }
 @media (max-width: 767px) {
   .worries_solution .point_contents .point_contents_bottom img {
@@ -1331,13 +1331,13 @@ header .drawer-item_bottom {
   transform: translateY(5px);
 }
 .achievements .case .case_item {
-  border-radius: 35px;
+  border-radius: 10px;
 }
 .achievements .case .swiper-area {
   position: relative;
 }
 .achievements .case .swiper {
-  border-radius: 32px;
+  border-radius: 10px;
   box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
   height: 100%;
 }
@@ -1425,7 +1425,7 @@ header .drawer-item_bottom {
 .achievements .solution .solution_3 {
   box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
   padding: 30px 30px 30px 0;
-  border-radius: 32px;
+  border-radius: 10px;
 }
 @media (max-width: 767px) {
   .achievements .solution .solution_1,
@@ -1441,7 +1441,7 @@ header .drawer-item_bottom {
 }
 .achievements .solution img {
   width: 40%;
-  border-radius: 31px;
+  border-radius: 10px;
 }
 @media (max-width: 767px) {
   .achievements .solution img {
@@ -1503,14 +1503,14 @@ header .drawer-item_bottom {
   }
 }
 .take_free .take_free_inner {
-  border-radius: 33px;
+  border-radius: 10px;
   padding: 50px 30px;
   position: relative;
   transition: all 0.5s cubic-bezier(0.4, 0, 0, 1);
 }
 @media (max-width: 767px) {
   .take_free .take_free_inner {
-    border-radius: 27px;
+    border-radius: 10px;
     padding: 20px;
   }
 }

@@ -32,7 +32,7 @@ $(window).scroll(function () {
       scroll = $(window).scrollTop(),
       windowHeight = $(window).height();
 
-    if (scroll > elemPos - windowHeight + 50) {
+    if (scroll > elemPos - windowHeight) {
       $('.slidein_1').addClass('scrollin');
     }
   });
@@ -44,7 +44,7 @@ $(window).scroll(function () {
       scroll = $(window).scrollTop(),
       windowHeight = $(window).height();
 
-    if (scroll > elemPos - windowHeight + 150) {
+    if (scroll > elemPos - windowHeight) {
       $('.slidein_2').addClass('scrollin');
     }
   });
@@ -56,7 +56,7 @@ $(window).scroll(function () {
       scroll = $(window).scrollTop(),
       windowHeight = $(window).height();
 
-    if (scroll > elemPos - windowHeight + 150) {
+    if (scroll > elemPos - windowHeight) {
       $('.slidein_3').addClass('scrollin');
     }
   });
@@ -68,7 +68,7 @@ $(window).scroll(function () {
       scroll = $(window).scrollTop(),
       windowHeight = $(window).height();
 
-    if (scroll > elemPos - windowHeight + 150) {
+    if (scroll > elemPos - windowHeight) {
       $('.slidein_4').addClass('scrollin');
     }
   });
